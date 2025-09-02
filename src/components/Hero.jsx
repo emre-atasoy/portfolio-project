@@ -1,52 +1,53 @@
 function Hero({ data }) {
   return (
-    <section className="flex flex-col items-center justify-center text-center py-16 bg-gray-50">
-      {/* Profil Resmi */}
-      <img 
-        src={data.profileImage} 
-        alt="profile" 
-        className="w-32 h-32 rounded-full border-4 border-indigo-500 mb-6 object-cover"
-      />
-
-      {/* Selam ve tanıtım */}
-      <h1 className="text-4xl font-bold text-gray-900 mb-2">{data.greeting}</h1>
-      <h2 className="text-xl text-gray-600 mb-6">{data.intro}</h2>
-
-      {/* Sosyal Medya Linkleri */}
-     <div className="flex space-x-4">
-  {/* Hire Me Kutusu */}
-  <div className="bg-white border-2 border-[#3730A3] p-4 rounded-lg shadow-md">
-  <a 
-    href="https://github.com"   
-    target="_blank"              
-    rel="noopener noreferrer"  
-    className="text-lg font-semibold text-gray-800 cursor-pointer hover:text-indigo-600 transition-colors"
-  >
-    Hire me
-  </a>
+   <section className="flex flex-col md:flex-row items-center gap-x-50 px-12 py-16 ">
+      
+      {/* Sol taraf - Yazılar */}
+      <div className="max-w-lg text-left">
+       <div className="flex items-center mb-4 gap-3 w-40">
+  <div className="flex-1 h-px bg-[#3730A3]"></div>
+  <span className="text-xl text-[#3730A3] font-medium ">{data.name}</span>
 </div>
+        {/* Büyük Başlık */}
+        <h1 className="text-5xl font-bold text-gray-900 leading-tight mb-4">
+          
+          {data.intro}
+        </h1>
 
-  {/* Sosyal Medya Kutuları */}
-  {data.socials.map((social, index) => (
-    <div 
-      key={index} 
-      className="bg-white border-2 border-[#3730A3] p-4  rounded-lg shadow-md transition-transform transform hover:scale-110"
-    >
-      <a 
-        href={social.link} 
-        target="_blank" 
-        rel="noopener noreferrer"
-      >
-        <img 
-          src={social.logo} 
-          alt={social.alt} 
-          className="w-8 h-8"
+        {/* Açıklama */}
+        <p className="text-gray-600 mb-9">
+          {data.greeting}
+        </p>
+
+        {/* Butonlar */}
+        <div className="flex gap-4">
+          <button className="px-6 py-2 bg-[#3730A3] text-white font-medium rounded-md shadow hover:bg-indigo-800">
+            Hire me
+          </button>
+
+          {data.socials.map((social, index) => (
+            <a
+              key={index}
+              href={social.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-5 py-2.5 border border-[#3730A3] rounded-md text-[#3730A3] hover:bg-purple-50"
+            >
+              <img src={social.logo} alt={social.alt}  className="w-6 h-6 -ml-2" />
+              {social.alt}
+            </a>
+          ))}
+        </div>
+      </div>
+
+      {/* Sağ taraf - Görsel */}
+      <div >
+        <img
+          src={data.profileImage}
+          alt="profile"
+          className="w-130 h-auto rounded-2xl shadow-lg object-cover"
         />
-      </a>
-    </div>
-  ))}
-</div>
-
+      </div>
     </section>
   );
 }

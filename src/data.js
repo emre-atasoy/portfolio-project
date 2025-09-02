@@ -1,18 +1,20 @@
 const data = {
   heroSection: {
-    greeting: "Hi, I'm Amira Su",
-    intro: "Creative thinker & Minimalism lover",
+    name:"Almila Su",
+    greeting: "Hi, I'm Almila.I'm full-stack developer.If you are looking for a developer who to creaft solid and scalable frontend products with great user experiences.Let's shake hands with me.",
+    intro: "Creative thinker Minimalism lover",
     profileImage: "/assets/profile-image.png",
     socials: [
-      {
-        logo: "/assets/in.png",
-        alt: "LinkedIn",
-        link: "https://linkedin.com"
-      },
+      
       {
         logo: "/assets/github.png",
         alt: "Github",
         link: "https://github.com"
+      },
+      {
+        logo: "/assets/in.png",
+        alt: "LinkedIn",
+        link: "https://linkedin.com"
       }
       
     ]
@@ -21,45 +23,53 @@ const data = {
   skillsSection: {
     title: "Skills",
     skills: [
-      { name: "JavaScript", icon: "/assets/icon-js.png" },
-      { name: "React.js", icon: "/assets/icon-react.png" },
-      { name: "Node.js", icon: "/assets/icon-node.png" }
-    ]
+      { name: "JavaScript" },
+      { name: "React.js" },
+      { name: "Node.js" }
+    ],
+    text:"Excepteur sint occaecat cupidatat non proident, sun in culpa qui offica deserunt mollit anim id est laborum."
   },
 
   profileSection: {
     title: "Profile",
+    title2:"About Me",
     birthDate: "24.12.1996",
     city: "Ankara",
     education: "Hacettepe Üniversitesi, Bilgisayar Mühendisliği",
-    english: "B2",
+    choseRol: "Frontend,UI",
     aboutMe:
-      "I’m a full-stack developer passionate about building scalable web apps and beautiful user experiences."
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit.Veniam aut,odit laborum aliquam voluptatum nisi mollitia.",
+    aboutMe1:
+      "Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!"
   },
 
   projectsSection: {
+    app:"react",
+    app1:"redux",
+    app2:"axios",
+    
     title: "Projects",
     projects: [
       {
         name: "Workintech",
         description:
-          "An app that helps developers showcase their portfolios.",
-        image: "/assets/project1.png",
+          "A sipmle,customizable,minimal cookie plugin that allows your users to select which cookies to accept or decline.This was created with vanilla JS,SCSS and Parcel Bundler and is aviable as a NPM package and the git repository makes any type of customization to code and themes possible.",
+        image: "/assets/projects-1.png",
         github: "https://github.com/workintech",
-        live: "https://workintech.com"
+        live: "https://www.workintech.com.tr/"
       },
       {
         name: "Random Jokes",
-        description: "A fun app that fetches random jokes from an API.",
-        image: "/assets/project2.png",
+        description: "A sipmle,customizable,minimal cookie plugin that allows your users to select which cookies to accept or decline.This was created with vanilla JS,SCSS and Parcel Bundler and is aviable as a NPM package and the git repository makes any type of customization to code and themes possible.",
+        image: "/assets/projects-2.png",
         github: "https://github.com/random-jokes",
         live: "https://randomjokes.com"
       },
       {
         name: "Journey",
         description:
-          "A travel blog app where users can share their journey stories.",
-        image: "/assets/project3.png",
+          "A sipmle,customizable,minimal cookie plugin that allows your users to select which cookies to accept or decline.This was created with vanilla JS,SCSS and Parcel Bundler and is aviable as a NPM package and the git repository makes any type of customization to code and themes possible.",
+        image: "/assets/projects-3.png",
         github: "https://github.com/journey",
         live: "https://journeyapp.com"
       }
@@ -67,13 +77,14 @@ const data = {
   },
 
   footerSection: {
-    email: "amirasucode@gmail.com",
-    links: {
-      blog: "https:/.dev",
-      github: "https://github.com",
-      linkedin: "https://linkedin.com/in"
-    }
-  }
+  title: "Let's work together on your next product.",
+  email: "amirasucode@gmail.com",
+  links: [
+    { name: "Personal Blog", url: "https://myblog.com" },
+    { name: "GitHub", url: "https://github.com" },
+    { name: "Linkedin", url: "https://linkedin.com/in" }
+  ]
+}
 };
 
 export default data;

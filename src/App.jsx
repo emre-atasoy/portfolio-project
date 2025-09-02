@@ -2,6 +2,11 @@ import axios from 'axios';
 import { useEffect, useState } from 'react'
 import data from './data';
 import Hero from './components/Hero';
+import Skills from './components/Skills';
+import Profile from './components/Profile';
+import Projects from './components/Projects';
+import Footer from './components/Footer';
+import Header from './components/Header';
 
 
 function App() {
@@ -25,15 +30,24 @@ function App() {
     console.error("HATA", err);
   });
 }, []);
-  return (
-  <div>
-    {portfolioData ? (
-      <Hero data={portfolioData.heroSection} />
-    ) : (
-      <p>Loading...</p>
-    )}
-  </div>
-);
+
+
+ return (
+    <div className='px-60 font-[Inter]'>
+      {portfolioData ? (
+        <>
+          <Header/>
+          <Hero data={portfolioData.heroSection} />
+          <Skills data={portfolioData.skillsSection} />
+          <Profile data={portfolioData.profileSection} />
+          <Projects data={portfolioData.projectsSection} />
+          <Footer data={portfolioData.footerSection} />
+        </>
+      ) : (
+        <p>Loading...</p>
+      )}
+    </div>
+  );
 }
 
 export default App
