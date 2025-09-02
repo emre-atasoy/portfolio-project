@@ -4,7 +4,7 @@ function Hero({ data }) {
       
       {/* Sol taraf - Yazılar */}
       <div className="max-w-lg text-left">
-       <div className="flex items-center mb-4 gap-3 w-40">
+       <div className="flex items-center mb-4 gap-3 w-60">
   <div className="flex-1 h-px bg-[#3730A3]"></div>
   <span className="text-xl text-[#3730A3] font-medium ">{data.name}</span>
 </div>
