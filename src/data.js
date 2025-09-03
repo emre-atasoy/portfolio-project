@@ -67,7 +67,7 @@ export const dataEn = {
 
   footerSection: {
     title: "Let's work together on your next product.",
-    email: "amirasucode@gmail.com",
+    email: "gokceatasoy@gmail.com",
     links: [
       { name: "Personal Blog", url: "https://myblog.com" },
       { name: "GitHub", url: "https://github.com" },
@@ -143,7 +143,7 @@ export const dataTr = {
 
   footerSection: {
     title: "Bir sonraki ürününüz üzerinde birlikte çalışalım.",
-    email: "amirasucode@gmail.com",
+    email: "gokceatasoy@gmail.com",
     links: [
       { name: "Kişisel Blog", url: "https://myblog.com" },
       { name: "GitHub", url: "https://github.com" },

@@ -1,2 +1,47 @@
 @import "tailwindcss";
 
+/* Light theme vars */
+:root {
+    --color-textColor: rgb(255, 255, 255);
+    --color-textBack: #3730A3;
+    --color-footerBack: white;
+    --color-forEmail: rgb(156, 11, 11);
+    --color-bgBase: #FDFDFD;
+ --color-bgContrast: #f9f9f9;
+  --color-textBase: #111111;
+  --color-textSecondary: #6B7280;
+  --color-border: #3730A3;
+  --color-toggle-bg: #3730A3;
+  --color-profile-bg: #43318d;
+  --color-github-bg: #ffffff;
+
+ 
+  
+ 
+}
+
+/* Dark theme vars */
+html.dark {
+    --color-textColor: rgb(0, 0, 0);
+    --color-textBack: rgb(226, 207, 238);
+    --color-footerBack: black;
+    --color-forEmail: #43318d;
+    --color-bgBase: #120116;
+
+  
+  --color-bgContrast: gray;
+  --color-textBase: gray;
+  --color-textSecondary: #D1D5DB;
+  --color-border: gray;
+  --color-toggle-bg: rgb(75, 73, 73);
+  --color-profile-bg: #cac6ff;
+  --color-github-bg: rgb(80, 80, 80);
+}
+
+/* Utility classes to map variables */
+.bg-base { background-color: var(--color-bgBase); }
+.bg-contrast { background-color: var(--color-bgContrast); }
+.text-base { color: var(--color-textBase); }
+.text-secondary { color: var(--color-textSecondary); }
+.text-primary { color: var(--color-primary100); }
+.border-primary { border-color: var(--color-border); }
